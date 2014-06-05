@@ -1,7 +1,9 @@
 <div class="tour-tip">
     <span class="tour-arrow tt-{{ ttPlacement }}"></span>
     <div class="tour-content-wrapper">
-        <p ng-bind="ttContent"></p>
+        <p ng-bind="ttTitle" ng-show="ttTitle" class="tour-title"></p>
+        <p ng-bind="ttProgress" ng-show="ttProgress" class="tour-progress"></p>
+        <p ng-bind="ttContent" class="tour-content"></p>
         <a ng-click="setCurrentStep(getCurrentStep() + 1)" ng-bind="ttNextLabel" class="small button tour-next-tip"></a>
         <a ng-click="closeTour()" class="tour-close-tip">×</a>
     </div>

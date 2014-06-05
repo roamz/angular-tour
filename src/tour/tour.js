@@ -147,6 +147,14 @@ angular.module('angular-tour.tour', [])
         attrs.$observe( 'tourtip', function ( val ) {
           scope.ttContent = val;
         });
+        
+        attrs.$observe( 'tourtipTitle', function ( val ) {
+          scope.ttTitle = val;
+        });
+        
+        attrs.$observe( 'tourtipProgress', function ( val ) {
+          scope.ttProgress = val;
+        });
 
         attrs.$observe( 'tourtipPlacement', function ( val ) {
           scope.ttPlacement = val || tourConfig.placement;

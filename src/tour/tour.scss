@@ -16,6 +16,11 @@
     line-height: 1.5em;
     margin: 0 0 1.125em;
   }
+  
+  .tour-title {
+    font-size: 1.1em;
+  }
+  
   button, .button {
     background-color: #189DAF;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -95,4 +100,13 @@
       color: #eee!important;
     }
   }
+  .tour-progress {
+    position: absolute;
+    right: 12px;
+    top: 24px;
+    margin: 0;
+    font-size: 1.1em;
+    text-align: right;
+  }
+  
 }
