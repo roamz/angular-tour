@@ -84,6 +84,10 @@ There are additional attributes that allow you to customize each tour-tip.
 
 `next-label` **(Default: "Next")**: The text for the next button.
 `placement` **(Default: "top")**: Placement of the tour tip relative to the target element. can be top, right, left, bottom
+`tourtip-title`: Adds a title header in the tour-tip.
+`tourtip-progress`: Adds progress indicator right below the close button (useful to let user know how many more of the tooltips will be showing), e.g.
+
+    <span tourtip-title="Title" tourtip="Content" tourtip-progress="2/6"></span>
 
 Inside your tour, you also have access to two scope methods for ending and starting the tour.
 
