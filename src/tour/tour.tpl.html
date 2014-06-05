@@ -4,7 +4,9 @@
         <p ng-bind="ttTitle" ng-show="ttTitle" class="tour-title"></p>
         <p ng-bind="ttProgress" ng-show="ttProgress" class="tour-progress"></p>
         <p ng-bind="ttContent" class="tour-content"></p>
-        <a ng-click="setCurrentStep(getCurrentStep() + 1)" ng-bind="ttNextLabel" class="small button tour-next-tip"></a>
+        <span class="tour-button-container">
+            <a ng-click="setCurrentStep(getCurrentStep() + 1)" ng-bind="ttNextLabel" class="small button tour-next-tip"></a>
+        </span>
         <a ng-click="closeTour()" class="tour-close-tip">×</a>
     </div>
 </div>

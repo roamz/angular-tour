@@ -1,6 +1,6 @@
 /**
  * An AngularJS directive for showcasing features of your website
- * @version v0.1.1 - 2014-06-05
+ * @version v0.1.2 - 2014-06-05
  * @link https://github.com/DaftMonk/angular-tour
  * @author Tyler Henkel
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -16,7 +16,7 @@
   angular.module('tour/tour.tpl.html', []).run([
     '$templateCache',
     function ($templateCache) {
-      $templateCache.put('tour/tour.tpl.html', '<div class="tour-tip">\n' + '    <span class="tour-arrow tt-{{ ttPlacement }}"></span>\n' + '    <div class="tour-content-wrapper">\n' + '        <p ng-bind="ttTitle" ng-show="ttTitle" class="tour-title"></p>\n' + '        <p ng-bind="ttProgress" ng-show="ttProgress" class="tour-progress"></p>\n' + '        <p ng-bind="ttContent" class="tour-content"></p>\n' + '        <a ng-click="setCurrentStep(getCurrentStep() + 1)" ng-bind="ttNextLabel" class="small button tour-next-tip"></a>\n' + '        <a ng-click="closeTour()" class="tour-close-tip">\xd7</a>\n' + '    </div>\n' + '</div>');
+      $templateCache.put('tour/tour.tpl.html', '<div class="tour-tip">\n' + '    <span class="tour-arrow tt-{{ ttPlacement }}"></span>\n' + '    <div class="tour-content-wrapper">\n' + '        <p ng-bind="ttTitle" ng-show="ttTitle" class="tour-title"></p>\n' + '        <p ng-bind="ttProgress" ng-show="ttProgress" class="tour-progress"></p>\n' + '        <p ng-bind="ttContent" class="tour-content"></p>\n' + '        <span class="tour-button-container">\n' + '            <a ng-click="setCurrentStep(getCurrentStep() + 1)" ng-bind="ttNextLabel" class="small button tour-next-tip"></a>\n' + '        </span>\n' + '        <a ng-click="closeTour()" class="tour-close-tip">\xd7</a>\n' + '    </div>\n' + '</div>');
     }
   ]);
   angular.module('angular-tour.tour', []).constant('tourConfig', {
