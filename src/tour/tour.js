@@ -25,7 +25,7 @@ angular.module('angular-tour.tour', [])
     // we'll pass these in from the directive
     self.postTourCallback = angular.noop;
     self.postStepCallback = angular.noop;
-    self.currentStep = 0;
+    self.currentStep = undefined;
 
     // if currentStep changes, select the new step
     $scope.$watch( function() { return self.currentStep; },

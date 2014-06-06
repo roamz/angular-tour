@@ -1,6 +1,6 @@
 /**
  * An AngularJS directive for showcasing features of your website
- * @version v0.1.2 - 2014-06-05
+ * @version v0.1.2 - 2014-06-06
  * @link https://github.com/DaftMonk/angular-tour
  * @author Tyler Henkel
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -23,7 +23,7 @@
       // we'll pass these in from the directive
       self.postTourCallback = angular.noop;
       self.postStepCallback = angular.noop;
-      self.currentStep = 0;
+      self.currentStep = undefined;
       // if currentStep changes, select the new step
       $scope.$watch(function () {
         return self.currentStep;
